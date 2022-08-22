@@ -1,6 +1,6 @@
 <?php
 
-namespace Teacher;
+namespace App;
 
 class Teacher
 {

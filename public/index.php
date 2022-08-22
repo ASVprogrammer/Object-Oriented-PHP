@@ -1,3 +1,5 @@
-<?php
+<?php require __DIR__ . "/../vendor/autoload.php";
 
-echo 'hello world';
+use App\User;
+
+$user = new User('amir abroun', 20);

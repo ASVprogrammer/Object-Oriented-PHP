@@ -1,8 +1,8 @@
 <?php
 
-namespace Teacher\Separation;
+namespace App\Separation;
 
-use Teacher\Teacher;
+use App\Teacher;
 
 class Separation extends Teacher
 {

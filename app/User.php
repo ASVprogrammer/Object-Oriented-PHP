@@ -5,6 +5,7 @@ namespace App;
 class User
 {
     public $name;
+    private $age;
 
     public function sayHello()
     {
@@ -15,6 +16,11 @@ class User
     {
         $this->name = $name;
         $this->age = $age;
+    }
+
+    public function __toString()
+    {
+        return "Name: " . $this->name . "<br> Age: " . $this->age;
     }
 
     public function __get($property)
@@ -30,6 +36,14 @@ class User
             $this->$property = $value;
         }
         return $this;
+    }
+
+    private static $nextId = 0;
+    public $myId;
+
+    public static function printId()
+    {
+        return "User id is: ". self::$nextId;
     }
 }
 

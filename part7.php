@@ -1,9 +1,11 @@
 <?php
-class User {
+class User
+{
     private static $nextId = 0;
     public $myId;
 
-    public static function printId() {
+    public static function printId()
+    {
         return "User id is: ". self::$nextId;
     }
 }

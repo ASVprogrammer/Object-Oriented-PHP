@@ -43,11 +43,6 @@ class User
 
     public static function printId()
     {
-        return "User id is: ". self::$nextId;
+        return "User id is: " . self::$nextId;
     }
 }
-
-$user = new User('Sajjad', 20);
-
-$user->__set('name', 'Tom');
-echo $user->__get('name');
